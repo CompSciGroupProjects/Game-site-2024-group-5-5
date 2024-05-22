@@ -1,0 +1,45 @@
+.grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea myArea myArea myArea';
+    gap: 10px;
+    background-color: midnightblue;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+#p1 {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+#winner {
+    font-size: 20px;
+    text-align: center;
+}
+
+#newGame {
+    display: none;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+#players {
+    margin: 0 auto;
+}
+
+#grid {
+    width: 800px;
+}
