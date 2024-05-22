@@ -54,13 +54,12 @@ function playComputerTurn(index) {
     if (board[index] === '') {
         playTurn(index);
         if (!isGameWon() && !isTie()) {
-            let randomIndex;
-            do {
-                randomIndex = Math.floor(Math.random() * BOARD_SIZE);
-            } while (board[randomIndex] !== '');
-            board[randomIndex] = currentPlayer === 'X' ? 'O' : 'X';
-            document.getElementById(randomIndex).textContent = currentPlayer === 'X' ? 'O' : 'X';
+            let bestMove = getBestMove();
+            board[bestMove] = currentPlayer === 'X' ? 'O' : 'X';
+            document.getElementById(bestMove).textContent = currentPlayer === 'X' ? 'O' : 'X';
             checkGameStatus();
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            document.getElementById('current-player').textContent = `Current Player: ${currentPlayer}`;
         }
     }
 }
@@ -103,3 +102,39 @@ function resetGame() {
     location.reload();
 }
 
+function getBestMove() {
+    for (let i = 0; i < BOARD_SIZE; i++) {
+        if (board[i] === '') {
+            board[i] = currentPlayer === 'X' ? 'O' : 'X';
+            if (isGameWon()) {
+                board[i] = '';
+                return i;
+            }
+            board[i] = '';
+        }
+    }
+    for (let i = 0; i < BOARD_SIZE; i++) {
+        if (board[i] === '') {
+            board[i] = currentPlayer;
+            if (isGameWon()) {
+                board[i] = '';
+                return i;
+            }
+            board[i] = '';
+        }
+    }
+    const strategicMoves = [4, 0, 2, 6, 8, 1, 3, 5, 7];
+    for (let move of strategicMoves) {
+        if (board[move] === '') {
+            return move;
+        }
+    }
+
+    for (let i = 0; i < BOARD_SIZE; i++) {
+        if (board[i] === '') {
+            return i;
+        }
+    }
+
+    return -1;
+}
