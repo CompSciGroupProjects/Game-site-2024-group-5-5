@@ -58,7 +58,7 @@ function playComputerTurn(index) {
             board[bestMove] = currentPlayer === 'X' ? 'O' : 'X';
             document.getElementById(bestMove).textContent = currentPlayer === 'X' ? 'O' : 'X';
             checkGameStatus();
-            currentPlayer = 'X'
+            currentPlayer = 'X';
             document.getElementById('current-player').textContent = `Current Player: ${currentPlayer} (vs Computer)`;
         }
     }
