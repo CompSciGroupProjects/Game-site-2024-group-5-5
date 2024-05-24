@@ -27,21 +27,21 @@ function col(column) {
 }
 
 function enterVal(row, column) {
-    document.getElementById(row + ", " + column).style.backgroundColor = player === 1 ? 'yellow':'red';
+    document.getElementById(row + ", " + column).style.backgroundColor = player === 1 ? '#272932':'#B6C2D9';
     checkWinner(row, column);
     if (numMoves === maxMoves) {
         document.getElementById("newGame").style.display = "block";
         document.getElementById("winner").innerHTML = "Tie!";
-        document.getElementById("p1").style.backgroundColor = 'white';
-        document.getElementById("p2").style.backgroundColor = 'white';
+        document.getElementById("p1").style.backgroundColor = '#6F5060';
+        document.getElementById("p2").style.backgroundColor = '#6F5060';
     } else if (winner) {
         document.getElementById("newGame").style.display = "block";
         document.getElementById("winner").innerHTML = "Player " + c4board[row][column] + " wins!";
-        document.getElementById("p1").style.backgroundColor = 'white';
-        document.getElementById("p2").style.backgroundColor = 'white';
+        document.getElementById("p1").style.backgroundColor = '#6F5060';
+        document.getElementById("p2").style.backgroundColor = '#6F5060';
     } else {
-        document.getElementById("p1").style.backgroundColor = player === 1 ? 'white':'yellow';
-        document.getElementById("p2").style.backgroundColor = player === 2 ? 'white':'red';
+        document.getElementById("p1").style.backgroundColor = player === 1 ? '#6F5060':'#272932';
+        document.getElementById("p2").style.backgroundColor = player === 2 ? '#6F5060':'#B6C2D9';
         player = player === 1 ? 2:1;
         numMoves++;
     }
