@@ -3,13 +3,13 @@
     display: grid;
     grid-template-areas: 'myArea myArea myArea myArea myArea myArea myArea';
     gap: 10px;
-    background-color: midnightblue;
+    background-color: #4D7EA8;
     padding: 10px;
     border-radius: 25px;
 }
 
 .grid-container > div {
-    background-color: white;
+    background-color: #6F5060;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -18,7 +18,7 @@
 }
 
 #p1 {
-    background-color: yellow;
+    background-color: #272932;
 }
 
 h1 {
@@ -42,4 +42,9 @@ h1 {
 
 #grid {
     width: 800px;
+}
+
+body {
+    background-color: #6F5060;
+    color: white;
 }
