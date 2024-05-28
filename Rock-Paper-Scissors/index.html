@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <script src = rock-paper-scissors.js></script>
     <meta charset="UTF-8">
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <h1>Rock-Paper-Scissors</h1>
-    <button class = "choice-buttons" onclick = "choice('rock'); clear()">Rock</button>
-    <button class = "choice-buttons" onclick = "choice('scissors')">Scissors</button>
-    <button class = "choice-buttons" onclick = "choice('paper')">Paper</button>
+<div class="topnav" id="myTopnav">
+    <a href="../Game-site-2024-group-5-5/index.html" class="active">Home</a>
+    <a href="../Connect4">Connect4</a>
+    <a href="../TicTacToe">TicTacToe</a>
+    <a href="..">Rock Paper Scissors</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+    <h1 id = 'header-text'><a class = 'letters'>R</a><a class = 'letters'>O</a><a class = 'letters'>C</a><a class = 'letters'>K</a><a class = 'letters'>-</a><a class = 'letters'>P</a><a class = 'letters'>A</a><a class = 'letters'>P</a><a class = 'letters'>E</a><a class = 'letters'>R</a><a class = 'letters'>-</a><a class = 'letters'>S</a><a class = 'letters'>C</a><a class = 'letters'>I</a><a class = 'letters'>S</a><a class = 'letters'>S</a><a class = 'letters'>O</a><a class = 'letters'>R</a><a class = 'letters'>S</a></h1>
+    <div id = "button-holder">
+        <div class = "choice-buttons" onclick = "choice('rock')">Rock</div>
+        <div class = "choice-buttons" onclick = "choice('scissors')">Scissors</div>
+        <div class = "choice-buttons" onclick = "choice('paper')">Paper</div>
+    </div>
     <div id = "displayPlayer">Player Choice: </div>
     <div id = "displayComputer">Computer Choice: </div>
     <div id = "displayResult">Result: </div>
-
 
 
 </body>
