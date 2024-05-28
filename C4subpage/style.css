@@ -1,3 +1,10 @@
-#id_c4Rules {
+#c4Rules {
     border: 5px double #9D9171;
+}
+
+body {
+    font-family: Calibri, serif;
+    text-align: center;
+    background-color: #533745;
+    color: white;
 }
