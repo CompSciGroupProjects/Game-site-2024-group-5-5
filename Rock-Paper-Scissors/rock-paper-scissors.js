@@ -55,17 +55,17 @@ function choice(choice) {
 function computerChoice() {
     let int;
 
-        int = Math.floor(Math.random() * 3) + 1;
-        if(int === 1){
-            computer = 'rock';
-        }
+    int = Math.floor(Math.random() * 3) + 1;
+    if(int === 1){
+        computer = 'rock';
+    }
 
-        else if(int === 2){
-            computer = 'paper';
-        }
-        else if(int === 3){
-            computer = 'scissors';
-        }
+    else if(int === 2){
+        computer = 'paper';
+    }
+    else if(int === 3){
+        computer = 'scissors';
+    }
 
 
 }
@@ -78,4 +78,3 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
