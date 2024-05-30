@@ -55,7 +55,7 @@ body {
 }
 
 .card {
-    height: 200px;
+    height: 461px;
     width: 50%;
     margin: auto;+
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -65,7 +65,7 @@ body {
 }
 
 img {
-    height: 200px;
+    height: 350px;
     width: 50%;
 }
 
