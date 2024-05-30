@@ -8,5 +8,5 @@ function myFunction() {
 }
 
 function goesToC4() {
-    window.location.href = "Connect4";
+    window.location.href = "../Connect4";
 }
