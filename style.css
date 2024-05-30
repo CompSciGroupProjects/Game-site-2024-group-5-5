@@ -32,6 +32,34 @@ body {
     display: none;
 }
 
+#container{
+    display: flex;
+    align-content: center;
+    margin: 5em;
+    justify-content: space-around;
+}
+
+.game-choice-box{
+    background-color: white;
+    width: 25%;
+    padding: 1.5em;
+    transition-duration: .5s;
+}
+
+.game-choice-box:hover{
+    transform: scale(102%);
+    background-color: lightgray;
+    h2{
+        color: white;
+        background-color: lightgray;
+    }
+}
+
+.game-choice-box h2{
+    background-color: #dddddd;
+}
+
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {

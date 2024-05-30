@@ -78,6 +78,9 @@ h1{
     transition-duration: 500ms;
     font-size: 1.5em;
     font-weight: 900;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: gray;
 
 }
 #button-holder{
@@ -94,11 +97,25 @@ h1{
 .choice-buttons:hover{
     transform: scale(103%);
     background-color: #B4BCCC;
+    opacity: 80%;
 }
 
 .letters:hover{
     font-size: 1.1em;
     color: white;
+}
+
+.results{
+    display: flex;
+    width: 80%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.displayUsers{
+
 }
 
 
