@@ -6,3 +6,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function goesToC4() {
+    window.location.href = "Connect4";
+}
