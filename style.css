@@ -3,6 +3,29 @@ body {
     font-family: Calibri, "sans-serif";
 }
 
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    border: 5px double #9E90A2;
+}
+
+.card {
+    width: 300px;
+}
+
+#card1 {
+    left: 250px;
+}
+
+#card2 {
+    left: 465px;
+}
+
+#card3 {
+    left: 715px;
+}
+
 .topnav {
     background-color: #51344d;
     overflow: hidden;
@@ -49,10 +72,12 @@ body {
 .game-choice-box:hover{
     transform: scale(102%);
     background-color: lightgray;
-    h2{
-        color: white;
-        background-color: lightgray;
-    }
+
+}
+
+h2 {
+    color: white;
+    background-color: lightgray;
 }
 
 .game-choice-box h2{
@@ -148,5 +173,4 @@ img {
 
 .action:hover span {
     transform: translateX(4px);
-
 }
