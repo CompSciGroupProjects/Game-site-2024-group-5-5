@@ -6,3 +6,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function goesToRPS() {
+    window.location.href = "../Rock-Paper-Scissors";
+}
