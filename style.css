@@ -3,6 +3,13 @@ body {
     font-family: Calibri, "sans-serif";
 }
 
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    border: 5px double 
+}
+
 .card {
     width: 300px;
 }
