@@ -1,11 +1,11 @@
 body {
-    font-family: Calibri, SansSerif;
+    font-family: Calibri, sans-serif;
     background: #6e5060;
+    color: white;
 }
 
 h1 {
     text-align: center;
-    color: #272932;
 }
 
 table {
@@ -31,7 +31,7 @@ p {
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    color: #272932;
+
 }
 
 .buttons {
