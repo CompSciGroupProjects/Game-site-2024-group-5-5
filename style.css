@@ -3,6 +3,10 @@ body {
     font-family: Calibri, "sans-serif";
 }
 
+.card {
+    width: 300px;
+}
+
 .topnav {
     background-color: #51344d;
     overflow: hidden;
@@ -49,10 +53,12 @@ body {
 .game-choice-box:hover{
     transform: scale(102%);
     background-color: lightgray;
-    h2{
-        color: white;
-        background-color: lightgray;
-    }
+
+}
+
+h2 {
+    color: white;
+    background-color: lightgray;
 }
 
 .game-choice-box h2{
@@ -148,5 +154,4 @@ img {
 
 .action:hover span {
     transform: translateX(4px);
-
 }
