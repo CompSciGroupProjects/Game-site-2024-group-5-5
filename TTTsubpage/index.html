@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TicTacToe Rules</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="tttRules.js"></script>
 </head>
 <body>
+
+<div class="topnav" id="myTopnav">
+    <a href="../index.html" class="active">Home</a>
+    <a href="../Connect4">Connect4</a>
+    <a href="../TicTacToe">TicTacToe</a>
+    <a href="../Rock-Paper-Scissors">Rock Paper Scissors</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<h1>
+    TicTacToe Rules
+</h1>
+
+<div id="tttRules">
+    Tic Tac Toe is a classic game played on a 3x3 grid. Two players (either Computer vs. Player or Player vs. Player) take turns marking empty cells with their chosen symbols, usually "X" and "O", until one player successfully forms a line of three of their symbols either horizontally, vertically, or diagonally. In this game, you can switch between Two-Player and Player vs. Computer. The game requires strategic thinking to both block your opponent's moves and create opportunities for your own wins. Are you ready to play?
+    <button onclick="goesToTTT()">Play TicTacToe</button>
+</div>
 
 </body>
 </html>
