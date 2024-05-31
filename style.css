@@ -14,6 +14,18 @@ h1 {
     width: 300px;
 }
 
+#card1 {
+    left: 250px;
+}
+
+#card2 {
+    left: 465px;
+}
+
+#card3 {
+    left: 715px;
+}
+
 .topnav {
     background-color: #51344d;
     overflow: hidden;
